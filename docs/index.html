@@ -40,50 +40,25 @@
           <div class="font-light text-lg px-2 mb-12">
             <h2 class="text-xl font-semibold mb-4">On the Web</h2>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/ionicons/logo-github.svg"
-                class="inline w-6 mr-4"
-                alt="GitHub Logo"
-              />
+              <img src="./assets/ionicons/logo-github.svg" class="inline w-6 mr-4" alt="GitHub Logo" />
               <a href="https://github.com/rcravens" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/ionicons/logo-stackoverflow.svg"
-                class="inline w-6 mr-4"
-                alt="Stack Overflow Logo"
-              />
-              <a href="https://stackoverflow.com/users/261869/rcravens" target="_blank" rel="noopener noreferrer"
-                >StackOverflow</a
+              <img src="./assets/ionicons/logo-stackoverflow.svg" class="inline w-6 mr-4" alt="Stack Overflow Logo" />
+              <a href="https://stackoverflow.com/users/261869/rcravens" target="_blank" rel="noopener noreferrer">StackOverflow</a
               >
             </div>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/ionicons/logo-linkedin.svg"
-                class="inline w-6 mr-4"
-                alt="LinkedIn Logo"
-              />
+              <img src="./assets/ionicons/logo-linkedin.svg" class="inline w-6 mr-4" alt="LinkedIn Logo"/>
               <a href="https://www.linkedin.com/in/bobcravens/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/ionicons/logo-twitter.svg"
-                class="inline w-6 mr-4"
-                alt="Twitter Logo"
-              />
-              <a href="https://twitter.com/rcravens" target="_blank" rel="noopener noreferrer"
-                >@rcravens</a
-              >
+              <img src="./assets/ionicons/logo-twitter.svg" class="inline w-6 mr-4" alt="Twitter Logo" />
+              <a href="https://twitter.com/rcravens" target="_blank" rel="noopener noreferrer">@rcravens</a>
             </div>
             <div class="flex items-center my-3">
-              <img
-                src="./assets/ionicons/globe-outline.svg"
-                class="inline w-6 mr-4"
-                alt="Globe icon"
-              />
-              <a href="https://bobcravens.com" target="_blank" rel="noopener noreferrer"
-                >Portfolio</a
-              >
+              <img src="./assets/ionicons/globe-outline.svg" class="inline w-6 mr-4" alt="Globe icon" />
+              <a href="https://bobcravens.com" target="_blank" rel="noopener noreferrer">Portfolio</a>
             </div>
           </div>
           <div class="font-light text-lg px-2 mb-12">
@@ -333,156 +308,132 @@
               </section>
             </div>
           </div>
-
+          
           <hr class="mt-8 mb-12" />
 
           <div id="projects">
             <h1 class="text-2xl font-bold text-green-500 mb-10">Projects</h1>
-            <div>
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">Asset IQ</div>
-                  <div class="pl-2 italic">GenesisCare</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
-                    <span class="rounded-xl bg-gray-300 px-3">PHP</span>
-                    <span class="rounded-xl bg-gray-300 px-3">MySql</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Redis</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Ubuntu</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Cron</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Supervisor</span>
-                  </div>
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-x-2 gap-y-4">
+              <section class="bg-gradient-to-b from-purple-600 via-purple-700 to-purple-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">GenesisCare</div>
+                  <div class="font-bold">Asset IQ</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full">
-                  <div>
-                    Clinical operations platform that is leveraged by the Executive Team, Operational Leaders, and individual contributors from all departments (e.g., Regulatory, Dosimetry, Physics, Engineering, BI, HR...). The business goals are: 
-                    <ul class="list-disc pl-10 space-y-3">
-                      <li>Provide a one stop shop for operational data by consolidating data and providing integrated analytics, dashboards, and reporting</li>
-                      <li>Right data, right time, for the right person</li>
-                      <li>Operational KPI along each step of the clinical pathway with ability to deep-dive into data to allow data-driven actions</li>
-                      <li>Automate or streamline repetitive processes</li>
-                      <li>Provide features used to collect operational data</li>
-                    </ul>
-                  </div>
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
+                  <span class="rounded-xl bg-gray-300 px-3">PHP</span>
+                  <span class="rounded-xl bg-gray-300 px-3">MySql</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Redis</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ubuntu</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Cron</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Supervisor</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
+                  <p>Clinical operations platform that is leveraged by the Executive Team, Operational Leaders, and individual contributors from all departments (e.g., Regulatory, Dosimetry, Physics, Engineering, BI, HR...). The business goals are:</p>
+                  <ul class="list-disc pl-10 space-y-3">
+                    <li>Provide a one stop shop for operational data by consolidating data and providing integrated analytics, dashboards, and reporting</li>
+                    <li>Right data, right time, for the right person</li>
+                    <li>Operational KPI along each step of the clinical pathway with ability to deep-dive into data to allow data-driven actions</li>
+                    <li>Automate or streamline repetitive processes</li>
+                    <li>Provide features used to collect operational data</li>
+                  </ul>
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">Adaptivo</div>
-                  <div class="pl-2 italic">21st Century Oncology</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
-                    <span class="rounded-xl bg-gray-300 px-3">PHP</span>
-                    <span class="rounded-xl bg-gray-300 px-3">MySql</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Redis</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Ubuntu</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Cron</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Supervisor</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Python</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Flask</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Matlab</span>
-                  </div>
+              <section class="bg-gradient-to-b from-blue-600 via-blue-700 to-blue-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">21st Century Oncology</div>
+                  <div class="font-bold">Adaptivo</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full">
-                  <div>
-                    Patient quality assurance application used in radio-therapy (RT) departments to compare delivered versus planned treatment volumes. Expected dose is computed and compared to the exit dose measured using the external panel. Differences allow the oncology team to alter treatment when anatomical changes occur. This application is and FDA product that is marketed by Standard Imaging.
-                  </div>
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
+                  <span class="rounded-xl bg-gray-300 px-3">PHP</span>
+                  <span class="rounded-xl bg-gray-300 px-3">MySql</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Redis</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ubuntu</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Cron</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Supervisor</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Python</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Flask</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Matlab</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
+                  <p>Patient quality assurance application used in radio-therapy (RT) departments to compare delivered versus planned treatment volumes. Expected dose is computed and compared to the exit dose measured using the external panel. Differences allow the oncology team to alter treatment when anatomical changes occur. This application is and FDA product that is marketed by Standard Imaging.</p>
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">UP Center & TomoLink</div>
-                  <div class="pl-2 italic">Accuray / TomoTherapy</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">ASP.NET</span>
-                    <span class="rounded-xl bg-gray-300 px-3">C#</span>
-                    <span class="rounded-xl bg-gray-300 px-3">.NET Framework</span>
-                    <span class="rounded-xl bg-gray-300 px-3">IIS</span>
-                    <span class="rounded-xl bg-gray-300 px-3">SQL Server</span>
-                  </div>
+              <section class="bg-gradient-to-b from-green-600 via-green-700 to-green-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">Accuray</div>
+                  <div class="font-bold">UP Center & TomoLink</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full">
-                  <div>
-                    Operational dashboard for monitoring and remotely troubleshooting the TomoTherapy radio treatment delivery machines through out the world wide install base. The TomoLink components were deployed as part of each machines install and provided a secure gateway for access and quasi-realtime data collection. The Up Center application processed incoming data and provided a live view into clinical operations around the world.
-                    <ul class="list-disc pl-10 space-y-3">
-                      <li>The Support Team leveraged the quasi-realtime stream of data to pro-actively target issues</li>
-                      <li>The remote access features were used by the Support Team to troubleshoot and fix when possible or provide a solution to a dispatched Field Support Engineer</li>
-                      <li>Operational Team members monitored consumable parts and pro-actively scheduled maintence based on hours</li>
-                      <li>Marketing Team learned from high-performing centers and created training material that helped all centers</li>
-                      <li>Engineering Team monitored errors and targeted solutions in future releases</li>
-                    </ul>
-
-                  </div>
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">ASP.NET</span>
+                  <span class="rounded-xl bg-gray-300 px-3">C#</span>
+                  <span class="rounded-xl bg-gray-300 px-3">.NET Framework</span>
+                  <span class="rounded-xl bg-gray-300 px-3">IIS</span>
+                  <span class="rounded-xl bg-gray-300 px-3">SQL Server</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
+                  <p>Operational dashboard for monitoring and remotely troubleshooting the TomoTherapy radio treatment delivery machines through out the world wide install base. The TomoLink components were deployed as part of each machines install and provided a secure gateway for access and quasi-realtime data collection. The Up Center application processed incoming data and provided a live view into clinical operations around the world.</p>
+                  <ul class="list-disc pl-10 space-y-3">
+                    <li>The Support Team leveraged the quasi-realtime stream of data to pro-actively target issues</li>
+                    <li>The remote access features were used by the Support Team to troubleshoot and fix when possible or provide a solution to a dispatched Field Support Engineer</li>
+                    <li>Operational Team members monitored consumable parts and pro-actively scheduled maintence based on hours</li>
+                    <li>Marketing Team learned from high-performing centers and created training material that helped all centers</li>
+                    <li>Engineering Team monitored errors and targeted solutions in future releases</li>
+                  </ul>
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">TQA - TomoTherapy Quality Assurance</div>
-                  <div class="pl-2 italic">TomoTherapy</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">ASP.NET</span>
-                    <span class="rounded-xl bg-gray-300 px-3">C#</span>
-                    <span class="rounded-xl bg-gray-300 px-3">.NET Framework</span>
-                    <span class="rounded-xl bg-gray-300 px-3">IIS</span>
-                    <span class="rounded-xl bg-gray-300 px-3">SQL Server</span>
-                  </div>
+              <section class="bg-gradient-to-b from-yellow-600 via-yellow-700 to-yellow-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">TomoTherapy</div>
+                  <div class="font-bold">TQA</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full">
-                  <div>
-                    A calendar based tool that streamlines machine QA by providing automated data collection, analysis, and trending tools. TQA saves significant time and empowers Medical Physicists to perform required protocols (AAPM TG-148) in an efficient manner. TQA leverages on-board detectors to allow clinicians to quickly and easily assess the day-to-day consistency of a wide variety of parameters. Prior to TQA many of these QA protocols required collection of data with water tanks and / or film. The TQA platform was extensible by deploying additional QA modules. Each of the modules can be licensed individually by the business.
-                  </div>
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">ASP.NET</span>
+                  <span class="rounded-xl bg-gray-300 px-3">C#</span>
+                  <span class="rounded-xl bg-gray-300 px-3">.NET Framework</span>
+                  <span class="rounded-xl bg-gray-300 px-3">IIS</span>
+                  <span class="rounded-xl bg-gray-300 px-3">SQL Server</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
+                  TQA (TomoTherapy Quality Assurance) is a calendar based tool that streamlines machine QA by providing automated data collection, analysis, and trending tools. TQA saves significant time and empowers Medical Physicists to perform required protocols (AAPM TG-148) in an efficient manner. TQA leverages on-board detectors to allow clinicians to quickly and easily assess the day-to-day consistency of a wide variety of parameters. Prior to TQA many of these QA protocols required collection of data with water tanks and / or film. The TQA platform was extensible by deploying additional QA modules. Each of the modules can be licensed individually by the business.
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">Twinning Hardware & Software</div>
-                  <div class="pl-2 italic">TomoTherapy</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">MFC</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Serial Communication</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Motor Controllers</span>
-                    <span class="rounded-xl bg-gray-300 px-3">2D Motion</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Ion Chamber</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Electrometer</span>
-                  </div>
+              <section class="bg-gradient-to-b from-orange-600 via-orange-700 to-orange-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">TomoTherapy</div>
+                  <div class="font-bold">Twinning Platform</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full space-y-3">
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">MFC</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Serial Communication</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Motor Controllers</span>
+                  <span class="rounded-xl bg-gray-300 px-3">2D Motion</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ion Chamber</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Electrometer</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
                   <p>
-                    Developed hardware and software that was used by the Manufacturing Team to dosimetrically twin each machine during the manufacturing process. The hardware included a scanning platform that could be bolted to the machine and use stepper motors to drive an ion chamber in two-deminsions in the radiation field. The software simulanously controlled the scanning platform while sampling the ion chamber to measure the field. The data collected allowed tuning the output, energy, and field widths to a gold standard.
+                    Developed a platform (hardware and software) that was used by the Manufacturing Team to dosimetrically twin each machine during the manufacturing process. The hardware included a scanning framework that could be bolted to the machine and use stepper motors to drive an ion chamber in two-deminsions in the radiation field. The software simulanously controlled the scanning platform while sampling the ion chamber to measure the field. The data collected allowed tuning the output, energy, and field widths to a gold standard.
                   </p>
                   <p>
                     Previously, data was collected by Medical Physicists and a unique treatment beam model per machine was created. This process required a specialized skillset and took 2-3 days. The new process could be performed by the Manufacturing Techs and takes less than 1 hour.
                   </p>
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">Auto TX Commissioner</div>
-                  <div class="pl-2 italic">TomoTherapy</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">MFC</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Network Communications</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Cluster Computation</span>
-                  </div>
+              <section class="bg-gradient-to-b from-red-600 via-red-700 to-red-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">TomoTherapy</div>
+                  <div class="font-bold">Auto Commissioner</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full space-y-3">
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">MFC</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Network Communications</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Cluster Computation</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
                   <p>
                     Automated the optimazation of a treatment model to a set of measured data. The measured data set included output, energy, transverse profiles, and longitudinal profiles for each field width. The optimization process then automatically iterated on solutions that converged by tuning various model parameters.
                   </p>
@@ -491,19 +442,16 @@
                   </p>
                 </div>
               </section>
-
-              <hr class="mx-40 my-8" />
-
-              <section class="mb-6">
-                <div class="lg:inline-block lg:w-4/12 lg:align-top mb-2">
-                  <div class="text-blue-600">MVCT Commissioner</div>
-                  <div class="pl-2 italic">TomoTherapy</div>
-                  <div class="pl-2">
-                    <span class="rounded-xl bg-gray-300 px-3">MFC</span>
-                    <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
-                  </div>
+              <section class="bg-gradient-to-b from-teal-600 via-teal-700 to-teal-600 text-white p-4 rounded-lg space-y-3">
+                <div class=""><!-- header -->
+                  <div class="float-right italic">TomoTherapy</div>
+                  <div class="font-bold">MVCT Commissioner</div>
                 </div>
-                <div class="lg:inline-block lg:w-7/12 w-full space-y-3">
+                <div class="pl-2 text-black"><!-- technologies -->
+                  <span class="rounded-xl bg-gray-300 px-3">MFC</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Visual C++</span>
+                </div>
+                <div class="space-y-3"><!-- description -->
                   <p>
                     This feature was added to a set of engineering related tool called TDAT to allow the Manufacturing Techs to collect data and commission the mega-voltage CT imaging system on the TomoTherapy treatment machine. The imaging system is a critical feature that allows patients to be accurately aligned on the system before their radio therapy treatment. With the MVCT Commissioner it was easy to commission as part of the manufacturing process or re-commission in the field if necessary.
                   </p>
@@ -513,7 +461,7 @@
                 </div>
               </section>
             </div>
-
+          </div>
         </div>
       </main>
     </div>
