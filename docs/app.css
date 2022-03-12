@@ -516,16 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -595,14 +585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type: disc;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -628,10 +610,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 1rem;
 }
 
-.gap-y-3 {
-  row-gap: 0.75rem;
-}
-
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -650,18 +628,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -672,11 +638,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -704,16 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
-.bg-green-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -723,24 +674,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(147 197 253 / 0));
 }
 
-.from-blue-500 {
-  --tw-gradient-from: #3b82f6;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(59 130 246 / 0));
-}
-
-.from-blue-800 {
-  --tw-gradient-from: #1e40af;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(30 64 175 / 0));
-}
-
-.from-green-800 {
-  --tw-gradient-from: #166534;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 101 52 / 0));
-}
-
-.from-green-600 {
-  --tw-gradient-from: #16a34a;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 163 74 / 0));
+.from-purple-600 {
+  --tw-gradient-from: #9333ea;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(147 51 234 / 0));
 }
 
 .from-blue-600 {
@@ -748,9 +684,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(37 99 235 / 0));
 }
 
-.from-purple-600 {
-  --tw-gradient-from: #9333ea;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(147 51 234 / 0));
+.from-green-600 {
+  --tw-gradient-from: #16a34a;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(22 163 74 / 0));
 }
 
 .from-yellow-600 {
@@ -777,24 +713,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), #86efac, var(--tw-gradient-to, rgb(134 239 172 / 0));
 }
 
-.via-blue-400 {
-  --tw-gradient-stops: var(--tw-gradient-from), #60a5fa, var(--tw-gradient-to, rgb(96 165 250 / 0));
-}
-
-.via-green-900 {
-  --tw-gradient-stops: var(--tw-gradient-from), #14532d, var(--tw-gradient-to, rgb(20 83 45 / 0));
-}
-
-.via-green-700 {
-  --tw-gradient-stops: var(--tw-gradient-from), #15803d, var(--tw-gradient-to, rgb(21 128 61 / 0));
+.via-purple-700 {
+  --tw-gradient-stops: var(--tw-gradient-from), #7e22ce, var(--tw-gradient-to, rgb(126 34 206 / 0));
 }
 
 .via-blue-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #1d4ed8, var(--tw-gradient-to, rgb(29 78 216 / 0));
 }
 
-.via-purple-700 {
-  --tw-gradient-stops: var(--tw-gradient-from), #7e22ce, var(--tw-gradient-to, rgb(126 34 206 / 0));
+.via-green-700 {
+  --tw-gradient-stops: var(--tw-gradient-from), #15803d, var(--tw-gradient-to, rgb(21 128 61 / 0));
 }
 
 .via-yellow-700 {
@@ -817,28 +745,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #fff;
 }
 
-.to-blue-200 {
-  --tw-gradient-to: #bfdbfe;
-}
-
-.to-blue-500 {
-  --tw-gradient-to: #3b82f6;
-}
-
-.to-green-800 {
-  --tw-gradient-to: #166534;
-}
-
-.to-green-600 {
-  --tw-gradient-to: #16a34a;
+.to-purple-600 {
+  --tw-gradient-to: #9333ea;
 }
 
 .to-blue-600 {
   --tw-gradient-to: #2563eb;
 }
 
-.to-purple-600 {
-  --tw-gradient-to: #9333ea;
+.to-green-600 {
+  --tw-gradient-to: #16a34a;
 }
 
 .to-yellow-600 {
