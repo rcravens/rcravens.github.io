@@ -892,6 +892,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.card {
+  position:  relative;
+  transform-style:  preserve-3d;
+  transition:  all 0.8s ease;
+}
+
+.front {
+  position:  absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform:  rotateY(180deg);
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+
 @media (min-width: 640px) {
   .sm\:m-12 {
     margin: 3rem;
@@ -946,4 +969,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     vertical-align: top;
   }
 }
-
