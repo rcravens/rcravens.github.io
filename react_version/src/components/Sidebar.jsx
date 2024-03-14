@@ -11,7 +11,8 @@ export default function Sidebar({data}) {
             let position = window.scrollY + 200
             navbar_links.forEach(navbar_link => {
                 if (!navbar_link.hash) return
-                let section = document.querySelector(navbar_link.hash)
+                let hash = navbar_link.hash.startsWith('#/') ? navbar_link.hash.substring(2) : navbar_link.hash;
+                let section = document.querySelector(hash)
                 if (!section) return
                 if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
                     navbar_link.classList.add('active')
