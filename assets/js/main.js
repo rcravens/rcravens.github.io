@@ -6,6 +6,7 @@
      */
     const select = (el, all = false) => {
         el = el.trim()
+        el = el.startsWith('#/') ? el.substring(2) : el;
         if (all) {
             return [...document.querySelectorAll(el)]
         } else {
