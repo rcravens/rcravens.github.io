@@ -7,7 +7,7 @@ export default function Sidebar({data}) {
     useEffect(() => {
         let navbar_links = document.querySelectorAll('#navbar .scrollto')
 
-        window.addEventListener('scroll', () => {
+        function set_active_link() {
             let position = window.scrollY + 200
             navbar_links.forEach(navbar_link => {
                 if (!navbar_link.hash) return
@@ -19,8 +19,11 @@ export default function Sidebar({data}) {
                 } else {
                     navbar_link.classList.remove('active')
                 }
-            })
-        })
+            });
+        }
+
+        window.addEventListener('load', set_active_link);
+        window.addEventListener('scroll', set_active_link);
     })
 
     return (
@@ -42,7 +45,7 @@ export default function Sidebar({data}) {
 
                     <nav id="navbar" className="nav-menu navbar">
                         <ul>
-                            <li><HashLink to="/#hero" className="nav-link scrollto active"><i className="bx bx-home"></i> <span>Home</span></HashLink></li>
+                            <li><HashLink to="/#hero" className="nav-link scrollto"><i className="bx bx-home"></i> <span>Home</span></HashLink></li>
                             <li><HashLink to="/#about" className="nav-link scrollto"><i className="bx bx-user"></i> <span>About</span></HashLink></li>
                             <li><HashLink to="/#resume" className="nav-link scrollto"><i className="bx bx-file-blank"></i> <span>Resume</span></HashLink></li>
                             <li><HashLink to="/#portfolio" className="nav-link scrollto"><i className="bx bx-book-content"></i><span>Portfolio</span></HashLink></li>
