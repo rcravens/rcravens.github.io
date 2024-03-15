@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Resume({work_experiences, education}) {
     return (
         <section id="resume" className="resume">

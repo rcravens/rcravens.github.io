@@ -1,8 +1,12 @@
+import React, {useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import 'swiper/swiper-bundle.css';
+
 import Sidebar from "./components/Sidebar";
 import HomePage from "./HomePage";
 import {Route, Routes} from "react-router-dom";
 import PortfolioPage from "./PortfolioPage";
-import {useEffect} from "react";
 
 export default function Layout({data}) {
 
@@ -16,6 +20,15 @@ export default function Layout({data}) {
                 back_to_top.classList.remove('active')
             }
         })
+
+        window.addEventListener('load', () => {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            })
+        });
     })
 
     return (

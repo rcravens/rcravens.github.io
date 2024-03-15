@@ -1,6 +1,7 @@
+import React, {useEffect} from 'react';
+
 import {HashLink} from "react-router-hash-link";
 import {Link} from "react-router-dom";
-import {useEffect} from "react";
 
 export default function Sidebar({data}) {
 
@@ -24,6 +25,14 @@ export default function Sidebar({data}) {
 
         window.addEventListener('load', set_active_link);
         window.addEventListener('scroll', set_active_link);
+
+        // handle mobile nav toggle
+        let btn = document.querySelector('.mobile-nav-toggle');
+        btn.addEventListener('click', function () {
+            document.querySelector('body').classList.toggle('mobile-nav-active')
+            this.classList.toggle('bi-list')
+            this.classList.toggle('bi-x')
+        });
     })
 
     return (
