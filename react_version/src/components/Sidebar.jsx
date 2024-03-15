@@ -5,7 +5,17 @@ import {Link} from "react-router-dom";
 
 export default function Sidebar({data}) {
 
+    const [is_first, set_is_first] = React.useState(true);
+
     useEffect(() => {
+
+        if (is_first) {
+            set_is_first(false);
+            return;
+        }
+
+        // highlight the appropriate nav item based on scroll position
+        //
         let navbar_links = document.querySelectorAll('#navbar .scrollto')
 
         function set_active_link() {
@@ -26,9 +36,12 @@ export default function Sidebar({data}) {
         window.addEventListener('load', set_active_link);
         window.addEventListener('scroll', set_active_link);
 
-        // handle mobile nav toggle
+        // Handle the clicking of the mobile nav toggle icon
+        //
         let btn = document.querySelector('.mobile-nav-toggle');
         btn.addEventListener('click', function () {
+            console.log('here');
+            console.log(document.querySelector('body'), document.querySelectorAll('body'));
             document.querySelector('body').classList.toggle('mobile-nav-active')
             this.classList.toggle('bi-list')
             this.classList.toggle('bi-x')

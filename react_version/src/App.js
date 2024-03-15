@@ -1,5 +1,3 @@
-import './App.css';
-import React from 'react';
 import Layout from "./Layout";
 import app_data from "./app_data";
 
