@@ -119,7 +119,7 @@ export default function app_data() {
                         },
                         {
                             'title': 'Senior Manager System Analytics',
-                            'dates': 'January 2014 - February 2015',
+                            'dates': 'January 2014 - August 2015',
                             'company': 'Accuray',
                             'highlights': [
                                 'Conceptualized and presented a visionary data collection and reporting solution for the TomoTherapy and Cyberknife radiation oncology products to the Executive team to secure the funding to build an analytics team.',
