@@ -18,7 +18,7 @@ export default function About({data}) {
                             <div className="col-lg-12">
                                 <ul>
                                     {data.highlights.map((item, index) => (
-                                        <li key={index}><i className="bi bi-chevron-right"></i> {item}</li>
+                                        <li key={index}><i className="bi bi-chevron-right"></i> <span dangerouslySetInnerHTML={{__html: item}}></span></li>
                                     ))}
                                 </ul>
                             </div>
