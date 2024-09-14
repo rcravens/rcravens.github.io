@@ -29,7 +29,7 @@ export default function app_data() {
         },
         about: {
             title: 'Software Engineering - Director | Manager | Architect | Full Stack Developer',
-            image: 'assets/img/headshots/cravens_at_desk.jpg',
+            image: 'assets/img/headshots/cravens_at_desk.JPG',
             summary: `Innovative professional with a dynamic background in software engineering and
                             application architecture. Seasoned leader adept at spearheading teams to develop and
                             maintain cutting-edge full-stack solutions.`,
