@@ -195,13 +195,85 @@ export default function app_data() {
             summary: `The following are a few projects where my contributions have been instrumental to the success.
                         In all of these projects I served in a leadership role and contributed technically as an architect / full stack developer.
                         <strong>Click on each for additional details.</strong>`,
-            filters: ['web', 'app'],
+            filters: ['web', 'app', 'sandbox'],
             projects: {
+                'technology_sandbox': {
+                    name: 'Sandbox | Technology Sandbox - YouTube Channel',
+                    short_name: 'Technology Sandbox',
+                    filter: 'sandbox',
+                    image: 'assets/img/portfolio/technology_sandbox/tech_box_01.png',
+                    category: 'YouTube Channel',
+                    company: 'NA',
+                    urls: {'Technology Sandbox': 'https://www.youtube.com/@thetechnologysandbox'},
+                    tags: {
+                        'text-bg-secondary': ['Laravel', 'Vue.js', 'React', 'Django', 'FastAPI', 'Flask'],
+                        'text-bg-primary': ['PHP', 'Python', 'JavaScript'],
+                        'text-bg-success': ['MySQL', 'Redis', 'Ubuntu', 'Nginx', 'Docker'],
+                        'text-bg-info': ['AWS', 'OpenAI', 'Architecture', 'Infrastructure As Code', 'CI/CD', 'DevOps']
+                    },
+                    images: [
+                        'assets/img/portfolio/technology_sandbox/tech_box_01.png',
+                        'assets/img/portfolio/technology_sandbox/tech_box_02.png',
+                        'assets/img/portfolio/technology_sandbox/tech_box_03.png',
+                        'assets/img/portfolio/technology_sandbox/tech_box_04.png',
+                    ],
+                    paragraphs: [
+                        'Join me as I experiment, tinker, and push the boundaries of what\'s possible in this ever-evolving digital landscape. From in-depth product reviews and hands-on demonstrations to insightful tutorials and thought-provoking discussions. I\'m here to learn and to empower you with the knowledge and tools you need to navigate the exciting world of technology with confidence.',
+                    ]
+                },
+                'trails': {
+                    name: 'Sandbox | Trails App',
+                    short_name: 'Trails',
+                    filter: 'web',
+                    image: 'assets/img/portfolio/trails/trails_01.png',
+                    category: 'Full Stack Web Development',
+                    company: 'NA',
+                    urls: {},
+                    tags: {
+                        'text-bg-secondary': ['Laravel', 'Vue.js'],
+                        'text-bg-primary': ['PHP'],
+                        'text-bg-success': ['MySQL', 'Redis', 'Ubuntu'],
+                        'text-bg-info': ['AWS', 'OpenAI', 'Stripe', 'Weather']
+                    },
+                    images: [
+                        'assets/img/portfolio/trails/trails_01.png',
+                        'assets/img/portfolio/trails/trails_02.png',
+                        'assets/img/portfolio/trails/trails_03.png',
+                        'assets/img/portfolio/trails/trails_04.png',
+                        'assets/img/portfolio/trails/trails_05.png',
+                        'assets/img/portfolio/trails/trails_06.png',
+                    ],
+                    paragraphs: [
+                        'Full stack development of a web-based application that allows users to find trails, activities, and experiences that are near them.',
+                    ]
+                },
+                'architecture_examples': {
+                    name: 'Sandbox | Architectural Examples',
+                    short_name: 'Architectural',
+                    filter: 'sandbox',
+                    image: 'assets/img/portfolio/architecture/web_alb_docker_swarm.png',
+                    category: 'Cloud Architecture',
+                    company: 'NA',
+                    urls: {},
+                    tags: {
+                        'text-bg-success': ['Architecture', 'Cloud', 'AWS', 'Docker'],
+                    },
+                    images: [
+                        'assets/img/portfolio/architecture/web_alb_docker_swarm.png',
+                        'assets/img/portfolio/architecture/web_lb_phpfpm.png',
+                        'assets/img/portfolio/architecture/web_simple_arch.png',
+                        'assets/img/portfolio/architecture/dropbox.png',
+                    ],
+                    paragraphs: [
+                        'A few examples of cloud architecture showcasing the integration of various AWS services.',
+                        'These are from various "sandbox" projects that I have worked on during my free time.'
+                    ]
+                },
                 'gc_assetiq': {
-                    name: 'Asset IQ',
+                    name: 'GenesisCare | Asset IQ',
                     short_name: 'Asset IQ',
                     filter: 'web',
-                    image: 'assets/img/portfolio/assetiq-01.jpg',
+                    image: 'assets/img/portfolio/assetiq/assetiq-01.jpg',
                     category: 'Full Stack Web Development',
                     company: 'GenesisCare (formerly 21st Century Oncology)',
                     urls: {},
@@ -212,10 +284,10 @@ export default function app_data() {
                         'text-bg-info': ['Active Directory', 'Workday', 'ADP', 'Azure']
                     },
                     images: [
-                        'assets/img/portfolio/assetiq-01-clean.jpg',
-                        'assets/img/portfolio/assetiq-02-clean.jpg',
-                        'assets/img/portfolio/assetiq-03-clean.jpg',
-                        'assets/img/portfolio/assetiq-04-clean.jpg',
+                        'assets/img/portfolio/assetiq/assetiq-01-clean.jpg',
+                        'assets/img/portfolio/assetiq/assetiq-02-clean.jpg',
+                        'assets/img/portfolio/assetiq/assetiq-03-clean.jpg',
+                        'assets/img/portfolio/assetiq/assetiq-04-clean.jpg',
                     ],
                     paragraphs: [
                         'Delivering a comprehensive clinical operations platform utilized by executives, operational leaders, and team members across various departments including Regulatory, Dosimetry, Physics, Engineering, BI, and HR. Our business objectives are to:',
@@ -229,10 +301,10 @@ export default function app_data() {
                     ]
                 },
                 '21c_adaptivo': {
-                    name: 'Adaptivo',
+                    name: 'GenesisCare | Adaptivo',
                     short_name: 'Adaptivo',
                     filter: 'web',
-                    image: 'assets/img/portfolio/adaptivo-01.jpg',
+                    image: 'assets/img/portfolio/adaptivo/adaptivo-01.jpg',
                     category: 'Full Stack Web Development',
                     company: '21st Oncology / Standard Imaging',
                     urls: {
@@ -244,12 +316,12 @@ export default function app_data() {
                         'text-bg-success': ['MySQL', 'Redis', 'Ubuntu'],
                     },
                     images: [
-                        'assets/img/portfolio/adaptivo-01.png',
-                        'assets/img/portfolio/adaptivo-02.png',
-                        'assets/img/portfolio/adaptivo-03.png',
-                        'assets/img/portfolio/adaptivo-04.png',
-                        'assets/img/portfolio/adaptivo-05.png',
-                        'assets/img/portfolio/adaptivo-06.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-01.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-02.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-03.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-04.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-05.png',
+                        'assets/img/portfolio/adaptivo/adaptivo-06.png',
                     ],
                     paragraphs: [
                         'Patient quality assurance application used in radio-therapy (RT) departments to compare delivered versus planned treatment volumes. Expected dose is computed and compared to the actual delivered dose measured using the external panel. This allows the oncology team to alter the treatment plan when anatomical changes occur that result in unacceptable planned versus actual differences. This application is an FDA product that is marketed by Standard Imaging.',
@@ -258,10 +330,10 @@ export default function app_data() {
                     ]
                 },
                 'tomo_upcenter': {
-                    name: 'Up Center',
+                    name: 'Accuray | Up Center',
                     short_name: 'Up Center',
                     filter: 'web',
-                    image: 'assets/img/portfolio/upcenter-01.jpg',
+                    image: 'assets/img/portfolio/upcenter/upcenter-01.jpg',
                     category: 'Full Stack Web Development',
                     company: 'Accuray / TomoTherapy',
                     urls: {},
@@ -272,11 +344,11 @@ export default function app_data() {
                         'text-bg-info': ['Remote Data Collection Agent', 'Centralized Data Warehouse']
                     },
                     images: [
-                        'assets/img/portfolio/upcenter-01.png',
-                        'assets/img/portfolio/upcenter-02.png',
-                        'assets/img/portfolio/upcenter-03.png',
-                        'assets/img/portfolio/upcenter-04.png',
-                        'assets/img/portfolio/upcenter-01.png',
+                        'assets/img/portfolio/upcenter/upcenter-01.png',
+                        'assets/img/portfolio/upcenter/upcenter-02.png',
+                        'assets/img/portfolio/upcenter/upcenter-03.png',
+                        'assets/img/portfolio/upcenter/upcenter-04.png',
+                        'assets/img/portfolio/upcenter/upcenter-01.png',
                     ],
                     paragraphs: [
                         `Operational dashboard for monitoring and remotely troubleshooting the TomoTherapy radio-therapy (RT)
@@ -294,10 +366,10 @@ export default function app_data() {
                     ]
                 },
                 'tomo_tqa': {
-                    name: 'TomoTherapy Quality Assurance (TQA)',
+                    name: 'Accuray | TomoTherapy Quality Assurance (TQA)',
                     short_name: 'TQA',
                     filter: 'web',
-                    image: 'assets/img/portfolio/tqa-01.jpg',
+                    image: 'assets/img/portfolio/tqa/tqa-01.jpg',
                     category: 'Full Stack Web Development',
                     company: 'TomoTherapy',
                     urls: {
@@ -310,12 +382,12 @@ export default function app_data() {
                         'text-bg-info': ['Remote Data Collection Agent']
                     },
                     images: [
-                        'assets/img/portfolio/tqa-01.png',
-                        'assets/img/portfolio/tqa-02.png',
-                        'assets/img/portfolio/tqa-03.png',
-                        'assets/img/portfolio/tqa-04.png',
-                        'assets/img/portfolio/tqa-05.png',
-                        'assets/img/portfolio/tqa-06.png',
+                        'assets/img/portfolio/tqa/tqa-01.png',
+                        'assets/img/portfolio/tqa/tqa-02.png',
+                        'assets/img/portfolio/tqa/tqa-03.png',
+                        'assets/img/portfolio/tqa/tqa-04.png',
+                        'assets/img/portfolio/tqa/tqa-05.png',
+                        'assets/img/portfolio/tqa/tqa-06.png',
                     ],
                     paragraphs: [
                         `TQA (TomoTherapy Quality Assurance) is a calendar based tool that streamlines machine QA by providing
@@ -331,10 +403,10 @@ export default function app_data() {
                     ]
                 },
                 'diglabs_memberowl': {
-                    name: 'Member Owl',
+                    name: 'DigLabs | Member Owl',
                     short_name: 'Member Owl',
                     filter: 'web',
-                    image: 'assets/img/portfolio/memberowl-01.jpg',
+                    image: 'assets/img/portfolio/memberowl/memberowl-01.jpg',
                     category: 'Full Stack Web Development',
                     company: 'Dig Labs',
                     urls: {
@@ -347,14 +419,14 @@ export default function app_data() {
                         'text-bg-info': ['PaySimple', 'MailChimp', 'Twilio', 'Mailgun'],
                     },
                     images: [
-                        'assets/img/portfolio/memberowl-01.png',
-                        'assets/img/portfolio/memberowl-02.jpg',
-                        'assets/img/portfolio/memberowl-03.jpg',
-                        'assets/img/portfolio/memberowl-04.jpg',
-                        'assets/img/portfolio/memberowl-05.jpg',
-                        'assets/img/portfolio/memberowl-06.jpg',
-                        'assets/img/portfolio/memberowl-07.jpg',
-                        'assets/img/portfolio/memberowl-08.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-01.png',
+                        'assets/img/portfolio/memberowl/memberowl-02.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-03.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-04.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-05.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-06.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-07.jpg',
+                        'assets/img/portfolio/memberowl/memberowl-08.jpg',
 
                     ],
                     paragraphs: [
@@ -364,10 +436,10 @@ export default function app_data() {
                     ]
                 },
                 'diglabs_bids': {
-                    name: 'BIDS - Online Auctions',
+                    name: 'DigLabs | BIDS - Online Auctions',
                     short_name: 'BIDS',
                     filter: 'web',
-                    image: 'assets/img/portfolio/bids.jpg',
+                    image: 'assets/img/portfolio/bids/bids.jpg',
                     category: 'Full Stack Web Development',
                     company: 'Dig Labs',
                     urls: {
@@ -380,14 +452,14 @@ export default function app_data() {
                         'text-bg-info': ['Stripe', 'Mailgun', 'Twilio', 'AWS'],
                     },
                     images: [
-                        'assets/img/portfolio/bids.png',
-                        'assets/img/portfolio/bids-03.png',
-                        'assets/img/portfolio/bids-04.png',
-                        'assets/img/portfolio/bids-05.png',
-                        'assets/img/portfolio/bids-06.png',
-                        'assets/img/portfolio/bids-07.png',
-                        'assets/img/portfolio/bids-08.png',
-                        'assets/img/portfolio/bids-09.png',
+                        'assets/img/portfolio/bids/bids.png',
+                        'assets/img/portfolio/bids/bids-03.png',
+                        'assets/img/portfolio/bids/bids-04.png',
+                        'assets/img/portfolio/bids/bids-05.png',
+                        'assets/img/portfolio/bids/bids-06.png',
+                        'assets/img/portfolio/bids/bids-07.png',
+                        'assets/img/portfolio/bids/bids-08.png',
+                        'assets/img/portfolio/bids/bids-09.png',
                     ],
                     paragraphs: [
                         `BIDS is an easy-to-use low-cost solution for organizations to manage and host a professional auction.`,
@@ -395,10 +467,10 @@ export default function app_data() {
                     ]
                 },
                 'tomo_twinning': {
-                    name: 'Twinning Platform',
+                    name: 'Accuray | Twinning Platform',
                     short_name: 'Twinning Platform',
                     filter: 'app',
-                    image: 'assets/img/portfolio/twinning_platform.jpg',
+                    image: 'assets/img/portfolio/twinning/twinning_platform.jpg',
                     category: 'Application &amp; Integrated Hardware',
                     company: 'TomoTherapy',
                     urls: {
@@ -410,11 +482,11 @@ export default function app_data() {
                         'text-bg-info': ['Serial Communication', '2D Motion', 'Electrometer'],
                     },
                     images: [
-                        'assets/img/portfolio/twin-01.png',
-                        'assets/img/portfolio/twin-02.png',
-                        'assets/img/portfolio/twin-03.png',
-                        'assets/img/portfolio/twin-04.png',
-                        'assets/img/portfolio/twin-06.png',
+                        'assets/img/portfolio/twinning/twin-01.png',
+                        'assets/img/portfolio/twinning/twin-02.png',
+                        'assets/img/portfolio/twinning/twin-03.png',
+                        'assets/img/portfolio/twinning/twin-04.png',
+                        'assets/img/portfolio/twinning/twin-06.png',
                     ],
                     paragraphs: [
                         `Developed a platform that included hardware and software and was used by the Manufacturing Team to dosimetrically
@@ -429,10 +501,10 @@ export default function app_data() {
                     ]
                 },
                 'tomo_tps_model': {
-                    name: 'Treatment Planning Model',
+                    name: 'Accuray | Treatment Planning Model',
                     short_name: 'Treatment Planning Model',
                     filter: 'app',
-                    image: 'assets/img/portfolio/tomotherapy_machine.jpg',
+                    image: 'assets/img/portfolio/treatment_planning_model/tomotherapy_machine.jpg',
                     category: 'Application',
                     company: 'TomoTherapy',
                     urls: {},
@@ -442,9 +514,9 @@ export default function app_data() {
                         'text-bg-info': ['Cluster Computing'],
                     },
                     images: [
-                        'assets/img/portfolio/tomotherapy_machine.png',
-                        'assets/img/portfolio/tomo_no_covers.png',
-                        'assets/img/portfolio/tomo-dose.png',
+                        'assets/img/portfolio/treatment_planning_model/tomotherapy_machine.png',
+                        'assets/img/portfolio/treatment_planning_model/tomo_no_covers.png',
+                        'assets/img/portfolio/treatment_planning_model/tomo-dose.png',
                     ],
                     paragraphs: [
                         `Automated the optimization of a treatment model to a set of measured data. The measured data set included output,
@@ -458,10 +530,10 @@ export default function app_data() {
                     ]
                 },
                 'tomo_mvct': {
-                    name: 'Mega-Voltage CT (MVCT) Commissioning',
+                    name: 'Accuray | Mega-Voltage CT (MVCT) Commissioning',
                     short_name: 'MVCT Commissioning',
                     filter: 'app',
-                    image: 'assets/img/portfolio/tomo_mvct.png',
+                    image: 'assets/img/portfolio/mvct/tomo_mvct.png',
                     category: 'Application',
                     company: 'TomoTherapy',
                     urls: {},
@@ -471,10 +543,10 @@ export default function app_data() {
                         'text-bg-info': ['CT Reconstruction', 'Image Processing'],
                     },
                     images: [
-                        'assets/img/portfolio/tomo_mvct.png',
-                        'assets/img/portfolio/mvct-02.png',
-                        'assets/img/portfolio/mvct-03.png',
-                        'assets/img/portfolio/mvct-04.jpg',
+                        'assets/img/portfolio/mvct/tomo_mvct.png',
+                        'assets/img/portfolio/mvct/mvct-02.png',
+                        'assets/img/portfolio/mvct/mvct-03.png',
+                        'assets/img/portfolio/mvct/mvct-04.jpg',
                     ],
                     paragraphs: [
                         `This feature set was added to an in-house engineering tool and allowed the Manufacturing Techs to

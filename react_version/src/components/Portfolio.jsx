@@ -8,7 +8,7 @@ export default function Portfolio({portfolio}) {
     useEffect(() => {
         window.addEventListener('load', () => {
             let portfolioContainer = document.querySelector('.portfolio-container');
-            let portfolioFilters = document.querySelectorAll('#portfolio-flters li');
+            let portfolioFilters = document.querySelectorAll('#portfolio-filters li');
 
             if (portfolioContainer) {
                 let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -43,7 +43,7 @@ export default function Portfolio({portfolio}) {
 
                 <div className="row" data-aos="fade-up">
                     <div className="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
+                        <ul id="portfolio-filters">
                             <li data-filter="*" className="filter-active">All</li>
                             {portfolio.filters.map((filter, idx) => (
                                 <li key={`portfolio-filter-${idx}`} data-filter={`.filter-${filter}`}>{filter}</li>
