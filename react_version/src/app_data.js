@@ -2,7 +2,7 @@ export default function app_data() {
     return {
         sidebar: {
             name: 'Bob Cravens',
-            image: 'assets/img/cravens-profile-img.jpg',
+            image: 'assets/img/headshots/cravens_profile_square.jpg',
             socials: [
                 {
                     name: 'LinkedIn',
@@ -29,7 +29,7 @@ export default function app_data() {
         },
         about: {
             title: 'Software Engineering - Director | Manager | Architect | Full Stack Developer',
-            image: 'assets/img/cravens2.jpg',
+            image: 'assets/img/headshots/cravens_at_desk.jpg',
             summary: `Innovative professional with a dynamic background in software engineering and
                             application architecture. Seasoned leader adept at spearheading teams to develop and
                             maintain cutting-edge full-stack solutions.`,
