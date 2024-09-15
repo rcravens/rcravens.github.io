@@ -16,7 +16,7 @@ export default function app_data() {
                 },
                 {
                     name: 'YouTube',
-                    url: 'https://www.youtube.com/@thetechsandbox',
+                    url: 'https://www.youtube.com/@thetechnologysandbox',
                     icon: 'bx bxl-youtube'
                 }
             ],
