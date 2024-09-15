@@ -92,11 +92,11 @@ export default function PortfolioPage({projects}) {
                                         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y, Zoom]}
                                         centeredSlides={true}
                                         autoplay={{
-                                            delay: 2500,
+                                            delay: 3000,
                                             disableOnInteraction: false,
                                         }}
                                         slidesPerView={1}
-                                        navigation={true}
+                                        navigation={false}
                                         pagination={{clickable: true}}
                                         scrollbar={false}
                                         zoom={true}

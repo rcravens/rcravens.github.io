@@ -197,6 +197,27 @@ export default function app_data() {
                         <strong>Click on each for additional details.</strong>`,
             filters: ['web', 'app', 'sandbox'],
             projects: {
+                'kit': {
+                    name: 'Sandbox | Kit - Application Starter Kit',
+                    short_name: 'Kit',
+                    filter: 'sandbox',
+                    image: 'assets/img/portfolio/kit/dev_to_prod.png',
+                    category: 'Open Source',
+                    company: 'NA',
+                    urls: {'Github Repo': 'https://github.com/rcravens/kit'},
+                    tags: {
+                        'text-bg-success': ['Shell', 'Python'],
+                        'text-bg-info': ['AWS', 'Ansible', 'Docker', 'Infrastructure As Code', 'CI/CD', 'DevOps']
+                    },
+                    images: [
+                        'assets/img/portfolio/kit/dev_to_prod.png',
+                        'assets/img/portfolio/kit/github.png',
+                        'assets/img/portfolio/kit/templates.png',
+                    ],
+                    paragraphs: [
+                        'This is an easy-to-use application starter kit. The workflows from creating a new application, doing development, and managing dev, stage, and prod environments are included.',
+                    ]
+                },
                 'technology_sandbox': {
                     name: 'Sandbox | Technology Sandbox - YouTube Channel',
                     short_name: 'Technology Sandbox',
@@ -247,6 +268,35 @@ export default function app_data() {
                         'Full stack development of a web-based application that allows users to find trails, activities, and experiences that are near them.',
                     ]
                 },
+                'job_coach': {
+                    name: 'Sandbox | AI Powered Job Coach',
+                    short_name: 'Job Coach',
+                    filter: 'sandbox',
+                    image: 'assets/img/portfolio/ai_job_coach/analysis.png',
+                    category: 'Open Source',
+                    company: 'NA',
+                    urls: {'Github Repo': 'https://github.com/rcravens/ai_job_coach'},
+                    tags: {
+                        'text-bg-success': ['Python', 'Streamlit'],
+                        'text-bg-info': ['OpenAI', 'LLM', 'AI', 'Prompt Engineering', 'AI Agents']
+                    },
+                    images: [
+                        'assets/img/portfolio/ai_job_coach/analysis.png',
+                        'assets/img/portfolio/ai_job_coach/ask_the_coach.png',
+                        'assets/img/portfolio/ai_job_coach/cover_letter.png',
+                        'assets/img/portfolio/ai_job_coach/word_cloud.png',
+                        'assets/img/portfolio/ai_job_coach/company_news.png',
+                        'assets/img/portfolio/ai_job_coach/prompt_engineering.png',
+                        'assets/img/portfolio/ai_job_coach/github.png',
+                    ],
+                    paragraphs: [
+                        'This is an open-source AI-powered job coach application. It uses OpenAI\'s GPT models to generate personalized job recommendations based on user input.',
+                        'The coach uses the job-seeker\'s background, industry knowledge, and skills to provide personalized advice and recommendations.',
+                        'The coach can compare to a job description and provide strengths and weaknesses based on their experience and qualifications.',
+                        'The coach can also generate cover letters and resumes based on user input.',
+                        'The architecture uses AI Agents and prompt engineering to optimize the LLM\'s capabilities to generate high-quality content.',
+                    ]
+                },
                 'architecture_examples': {
                     name: 'Sandbox | Architectural Examples',
                     short_name: 'Architectural',
@@ -259,6 +309,7 @@ export default function app_data() {
                         'text-bg-success': ['Architecture', 'Cloud', 'AWS', 'Docker'],
                     },
                     images: [
+                        'assets/img/portfolio/architecture/web_alb_autoscale.png',
                         'assets/img/portfolio/architecture/web_alb_docker_swarm.png',
                         'assets/img/portfolio/architecture/web_lb_phpfpm.png',
                         'assets/img/portfolio/architecture/web_simple_arch.png',
