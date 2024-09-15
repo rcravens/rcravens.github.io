@@ -1,14 +1,21 @@
-import {useEffect, useRef} from "react";
-import {register} from "swiper/element";
+import {useEffect} from "react";
+
+import {A11y, Autoplay, Navigation, Pagination, Scrollbar, Zoom} from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/react";
+
 import {Link, useLocation, useParams} from "react-router-dom";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar'
+import 'swiper/css/zoom';
 
 export default function PortfolioPage({projects}) {
 
-    register();
-
     let params = useParams();
 
-    const swiperElRef = useRef(null);
+    // const swiperElRef = useRef(null);
 
     let project = projects.hasOwnProperty(params.project) ? projects[params.project] : null;
 
@@ -21,10 +28,10 @@ export default function PortfolioPage({projects}) {
 
     useEffect(() => {
 
-        let el = document.querySelector('.swiper swiper-container');
-        if (el.hasOwnProperty('swiper')) {
-            el.swiper.slideTo(0, 0, false);
-        }
+        // let el = document.querySelector('.swiper swiper-container');
+        // if (el.hasOwnProperty('swiper')) {
+        //     el.swiper.slideTo(0, 0, false);
+        // }
 
     }, [location]);
 
@@ -81,23 +88,26 @@ export default function PortfolioPage({projects}) {
 
                             <div className="col-lg-8">
                                 <div className="portfolio-details-slider swiper">
-                                    <swiper-container
-                                        speed="600"
-                                        loop="true"
-                                        autoplay-delay="5000"
-                                        autoplay-disableOnInteraction="false"
-                                        slidesPerView="1"
-                                        pagination-el=".swiper-pagination"
-                                        pagination-type="bullets"
-                                        pagination-clickable="false"
+                                    <Swiper
+                                        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y, Zoom]}
+                                        centeredSlides={true}
+                                        autoplay={{
+                                            delay: 2500,
+                                            disableOnInteraction: false,
+                                        }}
+                                        slidesPerView={1}
+                                        navigation={true}
+                                        pagination={{clickable: true}}
+                                        scrollbar={false}
+                                        zoom={true}
                                     >
                                         {project.images.map((image, index) => (
-                                            <swiper-slide key={index}>
-                                                <img src={image} alt=""/>
-                                            </swiper-slide>
+                                            <SwiperSlide key={index}>
+                                                <a href={image} target="_blank"><img src={image} alt=""/></a>
+                                            </SwiperSlide>
                                         ))}
 
-                                    </swiper-container>
+                                    </Swiper>
                                     <div className="swiper-pagination"></div>
                                 </div>
                             </div>
