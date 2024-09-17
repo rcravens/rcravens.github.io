@@ -652,7 +652,7 @@ export default function app_data() {
             },
             {
                 name: 'Trish Rasmus',
-                title: 'GenesisCare - VP of Clinical Services and Operations',
+                title: 'GenesisCare - Chief Operating Officer',
                 text: `It is my pleasure to endorse Bob Cravens for employment in your organization.
                                     <br/><br/>
                                     I have known Bob for over 3 years, during which he worked as a Senior Software Engineering Manager.
