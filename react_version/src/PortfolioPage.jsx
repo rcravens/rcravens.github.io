@@ -122,7 +122,10 @@ export default function PortfolioPage({projects}) {
                                             Project URL</strong>:&nbsp;
                                             {Object.keys(project.urls).length === 0 ? 'Internal Project' :
                                                 Object.keys(project.urls).map((name, idx) => (
-                                                    <a key={idx} href={project.urls[name]} target="_blank" rel="noopener noreferrer">{name}</a>
+                                                    <span>
+                                                        <a key={idx} href={project.urls[name]} target="_blank" rel="noopener noreferrer">{name}</a>
+                                                        {idx !== (Object.keys(project.urls).length - 1) && <span> | </span>}
+                                                    </span>
                                                 ))}
                                         </li>
                                         <li><strong>Technologies</strong>:
