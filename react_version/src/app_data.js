@@ -108,38 +108,68 @@ export default function app_data() {
                     title: 'Professional Experience',
                     items: [
                         {
+                            'title': 'Chief Technology Officer',
+                            'dates': 'April 2024 - Present',
+                            'company': 'Let\'s Go Trail',
+                            'company_url': null,
+                            'highlights': [
+                                'Full ownership of defining and executing the technology vision and strategy, ensuring it aligns with the company’s goals. ',
+                                'Handle every aspect of product development, from designing scalable and secure systems to writing the code, testing, and deploying solutions. ',
+                                'Prioritize cost-efficient technology decisions and manage all technical resources to maximize value. ',
+                                'Adapt strategies to ensure the product meets user expectations and stands out in the market. ',
+                                'Take responsibility for maintaining compliance, security, and performance standards',
+                                'Laying the groundwork for future team expansion.'
+                            ]
+                        },
+                        {
+                            'title': 'Founder',
+                            'dates': 'January 2011 - Present',
+                            'company': 'TekFoundry',
+                            'company_url': 'https://tekfoundry.com',
+                            'highlights': [
+                                'Build and manage the following products / services:',
+                                '💥 <a href="https://zapl.io">Zapl - Easiest HTML Forms</a>',
+                                '▶️ <a href="https://tekcasts.com/">TekCasts - Screencasts for Professionals</a>',
+                                '▶️ <a href="https://www.youtube.com/@thetechnologysandbox">Technology Sandbox</a>',
+                                '💥 <a href="https://get.memberowl.com">MemberOwl - Martial Arts Membership Solutions</a>',
+                                '💥 <a href="https://bids.io">Bids - Simple Auction Solution</a>',
+                            ]
+                        },
+                        {
                             'title': 'Senior Manager Software Engineering',
                             'dates': 'August 2015 - February 2024',
                             'company': 'GenesisCare (formerly 21st Century Oncology)',
+                            'company_url': 'https://www.genesiscareus.com',
                             'highlights': [
-                                'Developed the strategic planning for Asset IQ, communicated the vision, and secured Executive team support.',
-                                'Directed the development of Asset IQ, an internal web-based platform, strategically created to enhance operational efficiency through intuitive dashboards and features.',
-                                'Integrated disparate data sources within Asset IQ for comprehensive views, enabling data-informed decision-making.',
-                                'Key evangelist in the widespread adoption of Asset IQ across multiple departments, including RT, Physics, Engineering, and Dosimetry, and all organizational levels from individual contributors to executives.',
-                                'Played a pivotal role in the development of Adaptivo, a cutting-edge patient dosimetry application, by leading the architectural design efforts to create a modern and user-friendly web experience.',
-                                'Architected the design of Adaptivo\'s resilient processing pipeline, enabling support for asynchronous job queues and ensuring high availability of critical functionalities.',
-                                'Assisted in the deployment of Adaptivo into beta and production environments, providing support to various teams and ensuring seamless integration with existing workflows.',
+                                'Directed a team of engineers in the development of custom solutions.',
+                                'Enhance operational management and improve patient care quality.',
+                                'Collaborated closely with the CTO and executive leadership to translate business objectives into technical requirements.',
+                                'Spearheaded the architecture, development, and production pipeline of 2 products developed by the team for 9+ years.',
+                                'Directly added $15M+ annual billing to organization.',
+                                'Established relationships with stakeholders and sponsors to ensure the team delivered products that 100% passed user acceptance.',
+                                'Championed the company-wide adoption of products and processes released by the team leading to 5000+ daily users.',
+                                'Learned operational aspects of 5+ roles (e.g., RT, Physics, Dosimetry) to better understand needs and offer technical solutions.',
+                                'Architected resilient and scalable solutions providing 99.99% uptime.',
+                                'Operated the CI/CD pipeline for all products with zero downtime deployments.',
+                                'Ensured products met 100% of regulatory (e.g., HIPAA) and security requirements.',
                             ]
                         },
                         {
                             'title': 'Senior Manager System Analytics',
                             'dates': 'January 2014 - August 2015',
                             'company': 'Accuray',
+                            'company_url': 'https://www.accuray.com/',
                             'highlights': [
-                                'Formulated and presented a forward-thinking data aggregation and analytics proposal to the Executive team, securing funding to establish an analytics team dedicated to enhancing the performance of TomoTherapy and CyberKnife radiation oncology products.',
-                                'Directed the end-to-end project lifecycle, including roadmap planning, backlog management, and capacity planning, while empowering team members to drive towards project milestones, ensuring successful project execution and delivery.',
-                                'Spearheaded the architecture and implementation of a unified, quasi-realtime data collection technology for TomoTherapy and Cyberknife products, enabling seamless data transmission from global installations to a centralized data-warehouse, optimizing data accessibility and analysis capabilities.',
-                                'Developed an optimized data model for the storage of collected data, prioritizing fast reads for reporting purposes while maintaining acceptable write speeds, ensuring efficient data retrieval and analysis.',
-                                'Led the design of a custom web-based dashboard and reporting solution (Up Center) tailored to provide role-specific views of the data, empowering stakeholders to make data-driven decisions. This solution facilitated troubleshooting, enabled proactive service opportunities, and facilitated remote service solutions, enhancing overall operational effectiveness and customer satisfaction.',
-                            ]
-                        },
-                        {
-                            'title': 'Research Software Manager',
-                            'dates': '2011 - January 2014',
-                            'company': 'Accuray',
-                            'highlights': [
-                                'Spearheaded the development of TomoTherapy Quality Assurance (TQA), a user-friendly application designed to automate the collection and analysis of key metrics for machine QA within the HiArt system. This application revolutionized daily, monthly, annual, and as- needed testing processes, resulting in significantly improved operational efficiency and informed decision-making for medical physics staff.',
-                                'Managed the technical development of TomoLink, a cutting-edge application enabling remote diagnostics of the HiArt system. By automating publication of system data to a central data- warehouse, TomoLink provided invaluable proactive troubleshooting information, enhancing overall system reliability and customer support capabilities.',
+                                'Founded and directed a team dedicated to the quasi-realtime (<15 sec) data collection and analysis for radiation oncology products.',
+                                'Created a strategic plan and collaborated with the Executive team to create a budget exceeding $500,000.',
+                                'Led the architecture and development of robust data collection agents leading to 0% data loss.',
+                                'Integrated data collection agents into 90+% of the radiation oncology products that were deployed around the world.',
+                                'Architected and created a scalable data processing pipeline ensuring 0% data loss.',
+                                'Defined the architecture, design, and development of a web-based, user-friendly analytics / reporting platform.',
+                                'Collaborated cross-functionally to ensure product passed 100% of user acceptance tests.',
+                                'Empowered end-users to make informed decisions by delivering real-time tailored insights. ',
+                                'Enabled proactive service opportunities that led to timely interventions. ',
+                                'Facilitated remote service solutions (<15 minute), significantly improving operational effectiveness and customer satisfaction.',
                             ]
                         }],
                 }
@@ -149,24 +179,48 @@ export default function app_data() {
                     title: '&nbsp;',
                     items: [
                         {
+                            'title': 'Research Software Manager',
+                            'dates': '2011 - January 2014',
+                            'company': 'Accuray',
+                            'company_url': 'https://www.accuray.com/',
+                            'highlights': [
+                                'Managed a team of developers and physicists tasked to cultivate research concepts and innovate solutions.',
+                                'Pioneered a user-friendly web-based quality assurance application used by Medical Physicists licensed at $100k per year.',
+                                'Automated collection of data and analysis of key machine quality assurance metrics.',
+                                'Transformed the medical physics daily, monthly, and annual testing processes, significantly enhancing operational efficiency.',
+                                'Improved patient care quality by enabling informed decision-making for medical physics teams.',
+                                'Automated the collection of system data to a central data warehouse providing essential proactive troubleshooting insights.',
+                                'Enhanced overall system reliability by creating a top 10 errors report per version allowing Engineering to target improvements.',
+                            ]
+                        },
+                        {
                             title: 'Lead Applied Physicist',
                             dates: '2005 - 2011',
                             company: 'TomoTherapy',
+                            company_url: 'https://tomotherapy.com',
                             highlights: [
-                                'Led the development and research initiatives aimed at creating software applications to enhance operational efficiency and effectiveness for both internal and external stakeholders.',
-                                'Directed the development of TomoTherapy Quality Assurance (TQA), a user-friendly application designed to streamline the collection and analysis of critical metrics for machine QA within the HiArt system. This innovative solution facilitated a more efficient and informed approach to daily, monthly, annual, and as-needed testing processes for medical physics staff.',
-                                'Orchestrated the technical development of TomoLink, an advanced application enabling remote diagnostics of the HiArt system. By establishing a centralized data publishing mechanism to a Customer Support location, TomoLink provided invaluable proactive troubleshooting information, enhancing system reliability and customer support capabilities.',
+                                'Spearheaded development and research initiatives focused on innovating solutions and processes.',
+                                'Elevated operational efficiency by reducing Manufacturing bunker time from 30 days to 1 day.',
+                                'Engineered the design and development of a user-friendly application that streamlines quality assurance processes. ',
+                                'Revolutionized daily, monthly, annual, and ad-hoc testing processes for medical physics teams. (5 hours to 5 minutes)',
+                                'Trending and analytics enabled more efficient and informed decision-making.',
+                                'Led the technical development of an innovative application designed to facilitate remote diagnostics.',
+                                'Guided essential proactive troubleshooting by developing insights and metrics.',
                             ]
                         },
                         {
                             title: 'Physicist',
                             dates: '2003 - 2005',
                             company: 'TomoTherapy',
+                            company_url: 'https://tomotherapy.com',
                             highlights: [
+                                'Enhanced quality assurance processes for a novel radiotherapy treatment machine.',
+                                'Automated CT image commissioning within the manufacturing workflow and eliminated the need for on-site specialists.',
+                                'Reduced resource constraints and cut costs, which improved process efficiency.',
+                                'Streamlined the treatment planning commissioning process and reduced time from 30 days to 2-3 days.',
+                                'Innovated dosimetric twinning to standardized models and further reduced time from 2-3 days to 1-2 hours.',
+                                'Boosted production efficiency and reduced the need for specialized experts in the Manufacturing process.',
                                 'Played a pivotal role in enhancing the Quality Assurance processes for the TomoTherapy radiotherapy machine.',
-                                'Automated and streamlined the MVCT commissioning process. Eliminated the need for on-site visits by specialists by integrating commissioning into the manufacturing workflow. This optimized the manufacturing process, eliminated resource constraint, and reduced cost.',
-                                'Automated and streamlined the treatment planning commissioning process. Transformed a previously manual and time-consuming procedure requiring specialized expertise (Medical Physicist) into a streamlined process that reduced commissioning time from approximately 30 days to 2-3 days, significantly accelerating time-to-market.',
-                                'Led the development of hardware, software, and processes for dosimetric \'twinning\' of the TomoTherapy machine to a pre-created gold standard Treatment Planning System model. This twinning system allowed production to ramp up by reducing the need for specialized expertise (Medical Physicist). The gold standard models removed “snowflake models” from the install base allowing for more efficient customer support.',
                             ]
                         }
                     ]
@@ -201,13 +255,41 @@ export default function app_data() {
                         <strong>Click on each for additional details.</strong>`,
             filters: ['web', 'app', 'sandbox'],
             projects: {
+                'zapl': {
+                    name: 'TekFoundry - Zapl',
+                    short_name: 'Zapl',
+                    filter: 'web',
+                    image: 'assets/img/portfolio/zapl/zapl_04.png',
+                    category: 'Full Stack Web Development',
+                    company: 'TekFoundry',
+                    urls: {
+                        'Zapl': 'https://zapl.io'
+                    },
+                    tags: {
+                        'text-bg-secondary': ['Laravel', 'Tailwind CSS'],
+                        'text-bg-primary': ['PHP'],
+                        'text-bg-success': ['MySQL', 'Redis', 'Ubuntu'],
+                        'text-bg-info': ['Digital Ocean', 'reCAPTCHA', 'Zapier']
+                    },
+                    images: [
+                        'assets/img/portfolio/zapl/zapl_01.png',
+                        'assets/img/portfolio/zapl/zapl_02.png',
+                        'assets/img/portfolio/zapl/zapl_03.png',
+                        'assets/img/portfolio/zapl/zapl_04.png',
+                        'assets/img/portfolio/zapl/zapl_05.png',
+                    ],
+                    paragraphs: [
+                        'Empower Your Website.\n',
+                        'Zapl makes it effortless to handle form submissions on your website—no backend required. Perfect for static sites, Zapl empowers you to store, manage, and analyze submissions with ease. Customize submission actions, forward data to email addresses, and connect with your favorite tools using Zapier. With robust security features like domain restrictions and Google reCAPTCHA, your data stays safe and spam-free. Whether you’re managing one form or a dozen, Zapl scales with your needs, giving you the tools to elevate your website’s potential and streamline your workflows.',
+                    ]
+                },
                 'linux_crash_course': {
-                    name: 'Sandbox | Linux Crash Course',
+                    name: 'TekFoundry | Linux Crash Course',
                     short_name: 'Linux Crash Course',
                     filter: 'sandbox',
                     image: 'assets/img/portfolio/linux_crash_course/introduction.png',
                     category: 'Open Source',
-                    company: 'NA',
+                    company: 'TekFoundry',
                     urls: {
                         'Github Repo': 'https://github.com/rcravens/linux-crash-course',
                         'Youtube Playlist': 'https://www.youtube.com/playlist?list=PL1tt6av2E5daeQzJYZBXt35fI1Hb5HLS0',
@@ -248,12 +330,12 @@ export default function app_data() {
                     ]
                 },
                 'kit': {
-                    name: 'Sandbox | Kit - Application Starter Kit',
+                    name: 'TekFoundry | Kit - Application Starter Kit',
                     short_name: 'Kit',
                     filter: 'sandbox',
                     image: 'assets/img/portfolio/kit/dev_to_prod.png',
                     category: 'Open Source',
-                    company: 'NA',
+                    company: 'TekFoundry',
                     urls: {'Github Repo': 'https://github.com/rcravens/kit'},
                     tags: {
                         'text-bg-success': ['Shell', 'Python'],
@@ -269,12 +351,12 @@ export default function app_data() {
                     ]
                 },
                 'technology_sandbox': {
-                    name: 'Sandbox | Technology Sandbox - YouTube Channel',
+                    name: 'TekFoundry | Technology Sandbox - YouTube Channel',
                     short_name: 'Technology Sandbox',
                     filter: 'sandbox',
                     image: 'assets/img/portfolio/technology_sandbox/tech_box_01.png',
                     category: 'YouTube Channel',
-                    company: 'NA',
+                    company: 'TekFoundry',
                     urls: {'Technology Sandbox': 'https://www.youtube.com/@thetechnologysandbox'},
                     tags: {
                         'text-bg-secondary': ['Laravel', 'Vue.js', 'React', 'Django', 'FastAPI', 'Flask'],
@@ -293,12 +375,12 @@ export default function app_data() {
                     ]
                 },
                 'trails': {
-                    name: 'Sandbox | Trails App',
+                    name: 'Let\'s Go Trails | Trails App',
                     short_name: 'Trails',
                     filter: 'web',
                     image: 'assets/img/portfolio/trails/trails_01.png',
                     category: 'Full Stack Web Development',
-                    company: 'NA',
+                    company: 'Let\'s Go Trails',
                     urls: {},
                     tags: {
                         'text-bg-secondary': ['Laravel', 'Vue.js'],
@@ -319,12 +401,12 @@ export default function app_data() {
                     ]
                 },
                 'job_coach': {
-                    name: 'Sandbox | AI Powered Job Coach',
+                    name: 'TekFoundry | AI Powered Job Coach',
                     short_name: 'Job Coach',
                     filter: 'sandbox',
                     image: 'assets/img/portfolio/ai_job_coach/analysis.png',
                     category: 'Open Source',
-                    company: 'NA',
+                    company: 'TekFoundry',
                     urls: {'Github Repo': 'https://github.com/rcravens/ai_job_coach'},
                     tags: {
                         'text-bg-success': ['Python', 'Streamlit'],
@@ -348,12 +430,12 @@ export default function app_data() {
                     ]
                 },
                 'architecture_examples': {
-                    name: 'Sandbox | Architectural Examples',
+                    name: 'TekFoundry | Architectural Examples',
                     short_name: 'Architectural',
                     filter: 'sandbox',
                     image: 'assets/img/portfolio/architecture/web_alb_docker_swarm.png',
                     category: 'Cloud Architecture',
-                    company: 'NA',
+                    company: 'TekFoundry',
                     urls: {},
                     tags: {
                         'text-bg-success': ['Architecture', 'Cloud', 'AWS', 'Docker'],
@@ -503,13 +585,13 @@ export default function app_data() {
                     licensed individually by the business.`
                     ]
                 },
-                'diglabs_memberowl': {
-                    name: 'DigLabs | Member Owl',
+                'tekfoundry_memberowl': {
+                    name: 'TekFoundry | Member Owl',
                     short_name: 'Member Owl',
                     filter: 'web',
                     image: 'assets/img/portfolio/memberowl/memberowl-01.jpg',
                     category: 'Full Stack Web Development',
-                    company: 'Dig Labs',
+                    company: 'TekFoundry',
                     urls: {
                         'https://get.memberowl.com/': 'https://get.memberowl.com/'
                     },
@@ -536,13 +618,13 @@ export default function app_data() {
                         `Member Owl leverages cloud infrastructure to provide a reliable, secure and safe hosting environment.`,
                     ]
                 },
-                'diglabs_bids': {
-                    name: 'DigLabs | BIDS - Online Auctions',
+                'tekfoundry_bids': {
+                    name: 'TekFoundry | BIDS - Online Auctions',
                     short_name: 'BIDS',
                     filter: 'web',
                     image: 'assets/img/portfolio/bids/bids.jpg',
                     category: 'Full Stack Web Development',
-                    company: 'Dig Labs',
+                    company: 'TekFoundry',
                     urls: {
                         'https://bids.io': 'https://bids.io'
                     },

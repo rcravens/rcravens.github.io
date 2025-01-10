@@ -18,10 +18,10 @@ export default function Resume({work_experiences, education}) {
                                     <div key={`resume-left-${idx1}-${idx2}`} className="resume-item">
                                         <h4>{item.title}</h4>
                                         <h5>{item.dates}</h5>
-                                        <p><em>{item.company}</em></p>
+                                        <p><em>{item.company}</em> {item.company_url && <a style={{marginLeft: '5px'}} href={item.company_url} target="_blank" rel="noopener noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>}</p>
                                         <ul>
                                             {item.highlights.map((text, idx3) => (
-                                                <li key={`resume-left-${idx1}-${idx2}-${idx3}`}>{text}</li>
+                                                <li key={`resume-left-${idx1}-${idx2}-${idx3}`} dangerouslySetInnerHTML={{__html: text}}></li>
                                             ))}
                                         </ul>
                                     </div>
@@ -49,10 +49,10 @@ export default function Resume({work_experiences, education}) {
                                     <div key={`resume-right-${idx1}-${idx2}`} className="resume-item">
                                         <h4>{item.title}</h4>
                                         <h5>{item.dates}</h5>
-                                        <p><em>{item.company}</em></p>
+                                        <p><em>{item.company}</em> {item.company_url && <a style={{marginLeft: '5px'}} href={item.company_url} target="_blank" rel="noopener noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>}</p>
                                         <ul>
                                             {item.highlights.map((text, idx3) => (
-                                                <li key={`resume-right-${idx1}-${idx2}-${idx3}`}>{text}</li>
+                                                <li key={`resume-right-${idx1}-${idx2}-${idx3}`} dangerouslySetInnerHTML={{__html: text}}></li>
                                             ))}
                                         </ul>
                                     </div>

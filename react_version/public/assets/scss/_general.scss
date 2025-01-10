@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: $primary;
+  color: $blue;
   text-decoration: none;
 }
 
-a:hover  {
-  color: lighten($primary, 10);
+a:hover {
+  color: lighten($blue, 10);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0;
   }
 
-  &:hover  {
+  &:hover {
     background: lighten($primary, 8);
     color: #fff;
   }
